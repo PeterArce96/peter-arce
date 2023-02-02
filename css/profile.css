@@ -3,6 +3,8 @@
     position: relative;
     display: flex;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 .profile-container{
     display: grid;
@@ -81,7 +83,7 @@
         font-size: 1.25rem;
     }
     .profile-info__description{
-        font-size: 1rem;
+        display: none;
     }
     .profile-figure__container{
         overflow: hidden;
