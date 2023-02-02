@@ -24,41 +24,36 @@
 }
 .profile-info{
     display: flex;
-    background-color: #36393b99;
+    height: 100%;
     flex-direction: column;
+    justify-content: center;
     padding: 2rem;
-    gap: 1rem;
-    border: 4px solid #68e6db;
+    gap: 2rem;
     border-radius: 1rem;
     transition: all 0.20s;
 }
-.profile-info:hover {
-    box-shadow: 0 0 0.25rem 0 #68e6db,
-    0 0 0.5rem #68e6db;
-}
-.profile-info__title{
-    text-align: center;
+.profile-info__intro{
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
+    
 }
 .profile-info__name{
-    text-transform: uppercase;
-    text-align: center;
     margin: 0;
-    font-size: 2rem;
-    text-shadow: 0 0 0.125rem #fff000, 0 0 0.250rem #fff000;
+    font-size: 2.5rem;
+    font-family: 'Carter One', cursive;
+    color: #5333ed;
+
 }
 .profile-info__subtitle{
     display: none;
     font-size: 1.125rem;
     margin: 0;
-    text-shadow: 0 0 0.125rem cornflowerblue, 0 0 0.250rem cornflowerblue;
+    
 }
 .profile-info__description{
-    text-align: justify;
     margin: 0;
-    font-size: 1.2rem;
-    text-shadow: 0 0 0.125rem cornflowerblue, 0 0 0.250rem cornflowerblue;
+    font-size: 1.8rem;
+    
 }
 .profile-figure__container{
     display: flex;
@@ -67,13 +62,12 @@
 .profile-figure__image{
     max-width: 400px;
     border-radius: 50%;
-    border: 4px solid #68e6db;
+    border: 4px solid #5333ed;
     transition: all 0.20s;
     box-sizing: border-box;
 }
 .profile-figure__image:hover{
-    box-shadow: 0 0 0.25rem 0 #68e6db,
-    0 0 0.5rem #68e6db;
+    box-shadow: 0 0 0.25rem 0 #5333ed;
     animation: giro 1s ease infinite;
 }
 
@@ -90,15 +84,19 @@
     }
     .profile-info{
         padding: 1rem;
+        align-items: center;
     }
-    .profile-info__title{
-        font-size: 1rem;
+    .profile-info__intro{
+        text-align: center;
+        font-size: 1.2rem;
     }
     .profile-info__name{
-        font-size: 1.5rem;
+        text-align: center;
+        font-size: 1.8rem;
     }
     .profile-info__subtitle{
         display: block;
+        font-size: 1.2rem;
     }
     .profile-info__description{
         display: none;
