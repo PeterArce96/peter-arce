@@ -6,32 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Arce</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
         <nav class="header-nav">
             <div class="header-nav__container">
-                <ul class="header-nav__list">
-                    <li class="header-nav__item">
-                        <a href="#profile" class="header-nav__link">Perfil</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="#project" class="header-nav__link">Proyectos</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="#skills" class="header-nav__link">Habilidades</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="#contacto" class="header-nav__link">Contacto</a>
-                    </li>
-                </ul>
+                <div class="header-nav__menu-container">
+                    <div id="headerNavMenuIcon" class="header-nav__menu-icon-label">
+                        <i class="bi bi-filter-right"></i>
+                    </div>
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="#profile" class="header-nav__link">Perfil</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#project" class="header-nav__link">Proyectos</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#skills" class="header-nav__link">Habilidades</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#contacto" class="header-nav__link">Contacto</a>
+                        </li>
+                        <li class="header-nav__item header-nav__menu-link--close-absolute" id="headerMenuCloseIcon">
+                            <i class="bi bi-x-circle"></i>
+                        </li>     
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <article id="profile" class="profile">
+            <div class="profile-container">
+                <div class="profile-info">
+                    <h2 class="profile-info__title">Hola 👋🏼 soy</h2>
+                    <h1 class="profile-info__name">Peter Arce 👨🏼‍💻</h1>
+                    <p class="profile-info__description">
+                        Egresado de la carrera de Ingeniería de Sistemas e informática en la Universidad Tecnológica del Perú, con conocimientos en tecnología de información y programación. 
+                        Actualmente buscando una oportunidad en el mundo del Desarrollo Web Frontend.
+                        Cuento con muchas ganar por laborar, tengo alto sentido de responsabilidad, trabajo en equipo, aptitudes para el aprendizaje, servicio, puntualidad, respeto.|
+                    </p>
+                </div>
+                    <figure class="profile-figure__container">
+                            <img src="./img/Peter.1.jpg" alt="Foto Peter Arce" class="profile-figure__image">
+                    </figure>
 
+            </div>
         </article>
 
         <section id="projects">
@@ -46,5 +69,7 @@
 
         </section>
     </main>
+
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
