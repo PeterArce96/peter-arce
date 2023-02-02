@@ -96,6 +96,7 @@
     text-transform: uppercase;
     transition: 0.25s;
     font-family: 'Bangers', cursive;
+    text-shadow: 0 0 0.125rem cornflowerblue, 0 0 0.250rem cornflowerblue;
 }
 .header-nav__link:hover{
     color: #68e6db;

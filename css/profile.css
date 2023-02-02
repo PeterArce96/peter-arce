@@ -1,4 +1,10 @@
 
+@keyframes giro {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .profile {
     position: relative;
     display: flex;
@@ -36,16 +42,23 @@
     font-size: 1.25rem;
 }
 .profile-info__name{
-    color: #68e6db;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
     font-size: 2rem;
+    text-shadow: 0 0 0.125rem #fff000, 0 0 0.250rem #fff000;
+}
+.profile-info__subtitle{
+    display: none;
+    font-size: 1.125rem;
+    margin: 0;
+    text-shadow: 0 0 0.125rem cornflowerblue, 0 0 0.250rem cornflowerblue;
 }
 .profile-info__description{
     text-align: justify;
     margin: 0;
     font-size: 1.2rem;
+    text-shadow: 0 0 0.125rem cornflowerblue, 0 0 0.250rem cornflowerblue;
 }
 .profile-figure__container{
     display: flex;
@@ -56,10 +69,12 @@
     border-radius: 50%;
     border: 4px solid #68e6db;
     transition: all 0.20s;
+    box-sizing: border-box;
 }
 .profile-figure__image:hover{
     box-shadow: 0 0 0.25rem 0 #68e6db,
     0 0 0.5rem #68e6db;
+    animation: giro 1s ease infinite;
 }
 
 @media (max-width: 854px) {
@@ -74,13 +89,16 @@
         overflow: hidden;
     }
     .profile-info{
-        padding: 0.5rem;
+        padding: 1rem;
     }
     .profile-info__title{
         font-size: 1rem;
     }
     .profile-info__name{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+    }
+    .profile-info__subtitle{
+        display: block;
     }
     .profile-info__description{
         display: none;
