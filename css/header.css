@@ -7,9 +7,11 @@
     width: 100%;
     background: linear-gradient(90deg, rgba(61,138,227,1) 0%, rgba(83,51,237,1) 50%);
 }
+.header--scroll{
+    box-shadow: 0 0.125rem 0.125rem 0 #000;
+}
 .header-nav{
     padding: 0.5em 0;
-    transition: 0.25s;
 }
 
 .header-nav__container{
@@ -33,13 +35,13 @@
     cursor: pointer;
     position: relative;
     top: 3px;
-    color: #fff;
-    transition: 0.25s;
+    color: var(--ligth-color);
+    transition: var(--all-transitions);
 }
 .header-nav__menu-link--close-absolute:hover,
 .header-nav__menu-icon-label:hover{
-    text-shadow: 0 0 0.25rem #fff,
-    0 0 0.5rem #fff;
+    text-shadow: 0 0 0.25rem var(--ligth-color),
+    0 0 0.5rem var(--ligth-color);
 }
 
 .header-nav__list{
@@ -58,7 +60,7 @@
     margin: 0;
     background: linear-gradient(180deg, rgba(61,138,227,1) 0%, rgba(83,51,237,1) 50%);
     list-style: none;
-    transition: 0.25s;
+    transition: var(--all-transitions);
 }
 .header-nav__menu-link-list--open {
     left: 0;
@@ -73,22 +75,21 @@
     top: 1rem;
     right: 2.1rem;
     font-size: 1.75rem;
-    color: white;
+    color: var(--ligth-color);
     cursor: pointer;
-    transition: 0.25s;
+    transition: var(--all-transitions);
 }
 
 .header-nav__link{
     text-decoration: none;
-    color: #fff;
+    color: var(--ligth-color);
     font-weight: 400;
     font-size: 2rem;
-    transition: 0.25s;
+    transition: var(--all-transitions);
     font-family: 'Lobster', cursive;
-    text-shadow: 0 0 0.125rem #1561f0, 0 0 0.250rem #1561f0;
 }
 .header-nav__link:hover{
-    color: #2cd4d9;
+    text-shadow: 0 0 0.2rem var(--ligth-color);
 }
 
 @media(min-width: 854px){

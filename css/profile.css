@@ -30,30 +30,30 @@
     padding: 2rem;
     gap: 2rem;
     border-radius: 1rem;
-    transition: all 0.20s;
+    font-style: italic;
 }
 .profile-info__intro{
     margin: 0;
+    font-weight: 700;
     font-size: 1.8rem;
-    
 }
 .profile-info__name{
     margin: 0;
     font-size: 2.5rem;
     font-family: 'Carter One', cursive;
-    color: #5333ed;
-
+    color: var(--primary-color);
+    font-style: normal;
 }
 .profile-info__subtitle{
     display: none;
     font-size: 1.125rem;
     margin: 0;
-    
+    font-weight: 700;
 }
 .profile-info__description{
     margin: 0;
     font-size: 1.8rem;
-    
+    font-weight: 700;
 }
 .profile-figure__container{
     display: flex;
@@ -62,12 +62,12 @@
 .profile-figure__image{
     max-width: 400px;
     border-radius: 50%;
-    border: 4px solid #5333ed;
-    transition: all 0.20s;
+    border: 4px solid var(--primary-color);
+    transition: var(--all-transitions);
     box-sizing: border-box;
 }
 .profile-figure__image:hover{
-    box-shadow: 0 0 0.25rem 0 #5333ed;
+    box-shadow: 0 0 0.25rem 0 var(--primary-color);
     animation: giro 1s ease infinite;
 }
 

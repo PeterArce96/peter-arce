@@ -5,10 +5,11 @@
 
 @import url(header.css);
 @import url(profile.css);
+@import url(variables.css);
 
 body{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--ligth-color);
+    color: var(--dark-color);
     font-family: 'Josefin Sans', sans-serif;
 }
 main{
