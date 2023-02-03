@@ -6,6 +6,7 @@
 @import url(header.css);
 @import url(profile.css);
 @import url(variables.css);
+@import url(skills.css);
 
 body{
     background-color: var(--ligth-color);
