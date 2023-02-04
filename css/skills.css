@@ -34,7 +34,7 @@
     border: 2px solid var(--dark-color);
     color: var(--primary-color);
     padding: 0.8rem 1rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     transition: var(--all-transitions);
 }
 .skills__list-item:hover{

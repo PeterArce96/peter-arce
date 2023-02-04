@@ -94,7 +94,7 @@
 
 @media(min-width: 854px){
     .header-nav{
-        padding: 1em 0;
+        padding: 0.8em 0;
     }
     .header-nav__container{
         justify-content: center;
