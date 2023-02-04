@@ -44,6 +44,7 @@
     font-family: 'Carter One', cursive;
     color: var(--primary-color);
     font-style: normal;
+    text-shadow: 0 0 0.125rem var(--primary-complement-color);
 }
 .profile-info__subtitle{
     display: none;
@@ -53,9 +54,29 @@
 }
 .profile-info__description{
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
+
+.profile-info__container-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile-info__buttons{
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-weight: 700;
+    color: var(--ligth-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+.profile-info__buttons:hover{
+    color: var(--dark-color);
+    background-color: var(--ligth-color);
+}
+
 .profile-figure__container{
     display: flex;
     justify-content: center;
