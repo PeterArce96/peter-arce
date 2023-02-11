@@ -53,6 +53,7 @@
 }
 .projects__item-image{
     width: 100%;
+    min-height: 200px;
 }
 .projects__item-data{
     display: flex;
