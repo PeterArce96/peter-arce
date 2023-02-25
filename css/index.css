@@ -8,6 +8,7 @@
 @import url(variables.css);
 @import url(skills.css);
 @import url(projects.css);
+@import url(education.css);
 
 body{
     background-color: var(--ligth-color);

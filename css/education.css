@@ -1,0 +1,74 @@
+.education{
+    padding: 4rem 0;
+    background-color: var(--primary-color);
+    color: var(--ligth-color)
+}
+.education__container{
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 2em;
+}
+.education__title{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 3rem;
+}
+.education__list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.education__list-container-titles{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    gap: 0.5rem;
+}
+.education__list-title{
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.education__list-title-dates{
+    margin: 0;
+}
+.education__list-description{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.education__list-button-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+.education__list-button{
+    color: var(--primary-color);
+    background-color: var(--ligth-color);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--dark-color);
+    transition: var(--all-transitions);
+}
+.education__list-button:hover{
+    background-color: var(--primary-color);
+    color: var(--ligth-color);
+    border: 2px solid var(--ligth-color);
+}
+
+@media (min-width: 854px){
+    .education__list-container-titles{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .education__list-title-dates{
+        font-size: 1.2rem;
+    }
+    .education__list-button{
+        font-size: 1.1rem;
+    }
+}
