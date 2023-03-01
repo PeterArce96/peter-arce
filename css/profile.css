@@ -83,7 +83,6 @@
     font-family: 'Carter One', cursive;
     color: var(--primary-color);
     font-style: normal;
-    text-shadow: 0 0 0.125rem var(--primary-complement-color);
 }
 .profile-info__subtitle{
     display: none;
